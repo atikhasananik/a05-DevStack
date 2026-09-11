@@ -48,8 +48,8 @@ const Hero = ({ linearGradient }: IHeroProps) => {
           </div>
         </div>
 
-        <div className="flex items-center h-full w-[40%]">
-          <img className="w-[120%] object-cover  " src={heroImg} alt="" />
+        <div className="flex items-center relative h-full w-[40%]">
+          <img className=" w-full object-cover  " src={heroImg} alt="" />
         </div>
       </div>
       <div className="w-8 absolute bottom-8 left-[50%] rounded-3xl h-1 mx-auto bg-pink-500"></div>
