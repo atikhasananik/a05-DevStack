@@ -3,7 +3,7 @@ import "../../index.css";
 
 const Nav = () => {
   return (
-    <div className="bg-[#ffffffde] py-5 w- sticky top-0 left-0 border-b-gray-200  border-b hover:shadow">
+    <div className="bg-[#ffffffec] py-5 w- sticky z-10 top-0 left-0 border-b-gray-200  border-b hover:shadow">
       <div className="flex justify-between items-center gap-15 container mx-auto ">
         <div className="">
           <img src={logo} alt="DevStack Logo here." className="w-full h-full" />

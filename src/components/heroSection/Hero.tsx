@@ -6,7 +6,7 @@ interface IHeroProps {
 
 const Hero = ({ linearGradient }: IHeroProps) => {
   return (
-    <div>
+    <div className="relative">
       <div className="flex items-center justify-between container mx-auto h-[90vh] ">
         <div>
           <div className=" py-5 mb-15">
@@ -52,6 +52,7 @@ const Hero = ({ linearGradient }: IHeroProps) => {
           <img className="w-[120%] object-cover  " src={heroImg} alt="" />
         </div>
       </div>
+      <div className="w-8 absolute bottom-8 left-[50%] rounded-3xl h-1 mx-auto bg-pink-500"></div>
     </div>
   );
 };
