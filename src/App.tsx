@@ -1,9 +1,11 @@
+import Hero from "./components/heroSection/Hero";
 import Nav from "./components/navber/Nav";
 
 const App = () => {
   return (
-    <div className="">
-     <Nav/>
+    <div>
+      <Nav />
+      <Hero />
     </div>
   );
 };
