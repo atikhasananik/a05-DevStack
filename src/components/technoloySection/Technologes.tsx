@@ -32,6 +32,7 @@ const Technologes = ({ linearGradient }: ITechnologesProps) => {
             style={{ backgroundImage: linearGradient }}
             className="bg-clip-text text-transparent font-extrabold"
           >
+            {" "}
             Technologies
           </span>
         </h1>

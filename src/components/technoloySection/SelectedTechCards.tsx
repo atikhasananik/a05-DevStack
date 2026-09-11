@@ -6,6 +6,8 @@ import { RxCross2 } from "react-icons/rx";
 export interface ISelectedTechCardsProps {
   selected: TechnologyData[];
   setSelected: Dispatch<SetStateAction<TechnologyData[]>>;
+
+  
 }
 
 const SelectedTechCards = ({
@@ -19,7 +21,7 @@ const SelectedTechCards = ({
           <div>
             <h2 className="text-2xl font-semibold">Your Stack</h2>
             <p style={{ color: "ver(--text-color)" }} className="">
-              no Technology Selected
+              no Technology Selected yet
             </p>
           </div>
 

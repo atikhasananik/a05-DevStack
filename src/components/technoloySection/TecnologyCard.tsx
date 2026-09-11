@@ -1,34 +1,58 @@
 import { FaStar } from "react-icons/fa";
 import type { TechnologyData } from "../../type";
 import type { Dispatch, SetStateAction } from "react";
+import { GiCheckMark } from "react-icons/gi";
+import { Bounce, toast } from "react-toastify";
 
 interface ITechnologyCardProps {
   cardData: TechnologyData;
   info: {
     selected: TechnologyData[];
-    setSelected:Dispatch<SetStateAction<TechnologyData[]>>
-    
+    setSelected: Dispatch<SetStateAction<TechnologyData[]>>;
   };
 }
 
 const TecnologyCard = ({
   cardData,
-  info: { selected, setSelected  },
+  info: { selected, setSelected },
 }: ITechnologyCardProps) => {
   const exist = selected.find((d) => {
     return d.id === cardData.id;
   });
-  const handleAddToStackBtn = (cardData: TechnologyData): void => {
+  const handleAddToStackBtn = (cardData: TechnologyData) => {
     if (!exist) {
       const newSelected = [...selected, cardData];
-      setSelected(newSelected)
-
-      
+      setSelected(newSelected);
+      return toast.success(`Successfully add to stack!`, {
+        position: "bottom-right",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: false,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "light",
+        transition: Bounce,
+      });
+    }else{
+        return toast.info(`Already added to stack!`, {
+        position: "top-right",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: false,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "light",
+        transition: Bounce,
+      });
     }
   };
 
   return (
-    <div className="p-8  border border-gray-200 rounded-3xl max-w-100 ">
+    <div
+      className={`p-8 border rounded-3xl max-w-100 ${exist ? "border-red-400 " : " border-gray-200"}`}
+    >
       <div className="flex items-center pb-4 justify-between ">
         <img
           className="w-13 h-13 "
@@ -67,10 +91,12 @@ const TecnologyCard = ({
 
       <button
         onClick={() => handleAddToStackBtn(cardData)}
-        style={{ backgroundColor: "var(--main-btn-color)" }}
-        className="btn rounded-xl py-6 font-normal  w-full text-white text-md"
+        className={`btn rounded-xl py-6 font-normal  w-full ${exist ? "border border-red-500 text-red-500" : "bg-[#0A0F1D] text-white"}  text-md`}
       >
-        Add to Stack
+        <span className={`${exist?"":"hidden"}`}>
+          <GiCheckMark />{" "}
+        </span>
+        {exist ? "Added to Stack" : "Add to Stack"}
       </button>
     </div>
   );
