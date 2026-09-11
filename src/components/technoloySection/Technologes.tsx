@@ -1,7 +1,6 @@
 import { Suspense, useState } from "react";
 import type { TechnologyData } from "../../type";
 import TechnologyCards from "./TechnologyCards";
-import SelectedTechCard from "./SelectedTechCard";
 import SelectedTechCards from "./SelectedTechCards";
 
 interface ITechnologesProps {
@@ -16,13 +15,10 @@ const getTechnologesData = async (): Promise<TechnologyData[]> => {
 };
 
 const Technologes = ({ linearGradient }: ITechnologesProps) => {
-
-  const [selected,setSelected] = useState<TechnologyData[]>([])
-  
-  
+  const [selected, setSelected] = useState<TechnologyData[]>([]);
 
   // console.log("userDataCard",userDataCard)
-  console.log("SelectedData",selected)
+  console.log("SelectedData", selected);
 
   return (
     <div className="container mt-5 mx-auto">
@@ -47,8 +43,11 @@ const Technologes = ({ linearGradient }: ITechnologesProps) => {
       <div className="grid gap-10 grid-cols-12 mt-15">
         <div className="col-span-9">
           <Suspense fallback={<p>loading...</p>}>
-            
-            <TechnologyCards selected={selected} setSelected={setSelected} getTechnologesData={getTechnologesData()} />
+            <TechnologyCards
+              selected={selected}
+              setSelected={setSelected}
+              getTechnologesData={getTechnologesData()}
+            />
           </Suspense>
         </div>
 
