@@ -1,7 +1,10 @@
-import heroImg from '../../assets/banner-stack.png'
+import heroImg from "../../assets/banner-stack.png";
 
+interface IHeroProps {
+  linearGradient: string;
+}
 
-const Hero = () => {
+const Hero = ({ linearGradient }: IHeroProps) => {
   return (
     <div>
       <div className="flex items-center justify-between container mx-auto h-[90vh] ">
@@ -14,8 +17,9 @@ const Hero = () => {
               Build Your Ideal
             </h1>
             <h1
-              className="text-7xl font-bold mb-6 bg-linear-to-r from-[#FF5722] via-[#D81B7E] to-[#7C3AED]
-             bg-clip-text text-transparent"
+              style={{ backgroundImage: linearGradient }}
+              className={`text-7xl font-bold  mb-6 
+             bg-clip-text text-transparent`}
             >
               Development Stack
             </h1>
@@ -32,7 +36,10 @@ const Hero = () => {
             className=" flex gap-4
           "
           >
-            <button className="py-3 px-6 bg-linear-to-r from-[#F97316] to-[#EC4899] text-xl rounded-2xl text-white font-semibold ">
+            <button
+              style={{ backgroundImage: linearGradient }}
+              className="py-3 px-6 text-xl rounded-2xl text-white font-semibold "
+            >
               Explore Technologies
             </button>
             <button className="py-3 px-6 border border-gray-400 rounded-2xl">
@@ -41,8 +48,8 @@ const Hero = () => {
           </div>
         </div>
 
-        <div className='flex items-center h-full w-[40%]'>
-          <img  className='w-[120%] object-cover  ' src={heroImg} alt="" />
+        <div className="flex items-center h-full w-[40%]">
+          <img className="w-[120%] object-cover  " src={heroImg} alt="" />
         </div>
       </div>
     </div>
