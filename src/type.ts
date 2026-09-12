@@ -7,4 +7,6 @@ export interface TechnologyData {
   rating: 4.9;
   difficulty: string;
   badge: string;
+  color: string;
+  bgColor: string;
 }

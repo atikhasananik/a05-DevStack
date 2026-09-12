@@ -7,7 +7,9 @@
     "icon": "https://icon.icepanel.io/Technology/svg/React.svg",
     "rating": 4.9,
     "difficulty": "Beginner-Friendly",
-    "badge": "Popular"
+    "badge": "Popular",
+    "color": "#61DAFB",
+    "bgColor": "#E8FAFE"
   },
   {
     "id": "nextjs",
@@ -17,7 +19,9 @@
     "icon": "https://icon.icepanel.io/Technology/svg/Next.js.svg",
     "rating": 4.8,
     "difficulty": "Intermediate",
-    "badge": "Full-Stack"
+    "badge": "Full-Stack",
+    "color": "#000000",
+    "bgColor": "#F2F2F2"
   },
   {
     "id": "nodejs",
@@ -27,7 +31,9 @@
     "icon": "https://icon.icepanel.io/Technology/svg/Node.js.svg",
     "rating": 4.8,
     "difficulty": "Intermediate",
-    "badge": "Fast"
+    "badge": "Fast",
+    "color": "#339933",
+    "bgColor": "#EBF7EB"
   },
   {
     "id": "express",
@@ -37,7 +43,9 @@
     "icon": "https://icon.icepanel.io/Technology/svg/Express.svg",
     "rating": 4.7,
     "difficulty": "Beginner-Friendly",
-    "badge": "Essential"
+    "badge": "Essential",
+    "color": "#000000",
+    "bgColor": "#F2F2F2"
   },
   {
     "id": "postgresql",
@@ -47,7 +55,9 @@
     "icon": "https://icon.icepanel.io/Technology/svg/PostgresSQL.svg",
     "rating": 4.9,
     "difficulty": "Intermediate",
-    "badge": "Top SQL"
+    "badge": "Top SQL",
+    "color": "#4169E1",
+    "bgColor": "#EDF0FD"
   },
   {
     "id": "mongodb",
@@ -57,7 +67,9 @@
     "icon": "https://icon.icepanel.io/Technology/svg/MongoDB.svg",
     "rating": 4.7,
     "difficulty": "Beginner-Friendly",
-    "badge": "NoSQL"
+    "badge": "NoSQL",
+    "color": "#47A248",
+    "bgColor": "#EDF7ED"
   },
   {
     "id": "typescript",
@@ -67,7 +79,9 @@
     "icon": "https://icon.icepanel.io/Technology/svg/TypeScript.svg",
     "rating": 4.9,
     "difficulty": "Intermediate",
-    "badge": "Popular"
+    "badge": "Popular",
+    "color": "#3178C6",
+    "bgColor": "#EBF3FC"
   },
   {
     "id": "python",
@@ -77,7 +91,9 @@
     "icon": "https://icon.icepanel.io/Technology/svg/Python.svg",
     "rating": 4.9,
     "difficulty": "Beginner-Friendly",
-    "badge": "Essential"
+    "badge": "Essential",
+    "color": "#3776AB",
+    "bgColor": "#EBF2F8"
   },
   {
     "id": "tailwindcss",
@@ -87,7 +103,9 @@
     "icon": "https://icon.icepanel.io/Technology/svg/Tailwind-CSS.svg",
     "rating": 4.8,
     "difficulty": "Beginner-Friendly",
-    "badge": "Fast"
+    "badge": "Fast",
+    "color": "#06B6D4",
+    "bgColor": "#E6F9FC"
   },
   {
     "id": "sass",
@@ -97,7 +115,9 @@
     "icon": "https://icon.icepanel.io/Technology/svg/Sass.svg",
     "rating": 4.6,
     "difficulty": "Beginner-Friendly",
-    "badge": "Styling"
+    "badge": "Styling",
+    "color": "#CC6699",
+    "bgColor": "#F9EDF4"
   },
   {
     "id": "docker",
@@ -107,7 +127,9 @@
     "icon": "https://icon.icepanel.io/Technology/svg/Docker.svg",
     "rating": 4.9,
     "difficulty": "Intermediate",
-    "badge": "Containers"
+    "badge": "Containers",
+    "color": "#2496ED",
+    "bgColor": "#E9F5FE"
   },
   {
     "id": "kubernetes",
@@ -117,7 +139,9 @@
     "icon": "https://icon.icepanel.io/Technology/svg/Kubernetes.svg",
     "rating": 4.8,
     "difficulty": "Advanced",
-    "badge": "Scalable"
+    "badge": "Scalable",
+    "color": "#326CE5",
+    "bgColor": "#EBF0FD"
   },
   {
     "id": "git",
@@ -127,7 +151,9 @@
     "icon": "https://icon.icepanel.io/Technology/svg/Git.svg",
     "rating": 4.9,
     "difficulty": "Beginner-Friendly",
-    "badge": "Essential"
+    "badge": "Essential",
+    "color": "#F05032",
+    "bgColor": "#FDEDEA"
   },
   {
     "id": "github",
@@ -137,7 +163,9 @@
     "icon": "https://icon.icepanel.io/Technology/svg/GitHub.svg",
     "rating": 4.9,
     "difficulty": "Beginner-Friendly",
-    "badge": "Popular"
+    "badge": "Popular",
+    "color": "#181717",
+    "bgColor": "#F1F1F1"
   },
   {
     "id": "redis",
@@ -147,6 +175,8 @@
     "icon": "https://icon.icepanel.io/Technology/svg/Redis.svg",
     "rating": 4.7,
     "difficulty": "Intermediate",
-    "badge": "Caching"
+    "badge": "Caching",
+    "color": "#DC382D",
+    "bgColor": "#FDECEB"
   }
 ]

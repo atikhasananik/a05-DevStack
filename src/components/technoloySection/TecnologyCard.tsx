@@ -60,7 +60,7 @@ const TecnologyCard = ({
           alt={cardData.name}
         />
 
-        <div className="py-1 px-3 text-sm border border-gray-300 bg-sky-100 rounded-4xl">
+      <div style={{color:`${cardData.color}`,backgroundColor:`${cardData.bgColor}` }} className={`py-1 px-3 text-sm rounded-4xl`}>
           {cardData.badge}
         </div>
       </div>
