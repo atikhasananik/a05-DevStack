@@ -22,7 +22,7 @@ const Technologes = ({ linearGradient }: ITechnologesProps) => {
 
   return (
     <div
-      className="container max-sm:mx-5
+      className="sm:container  max-sm:mx-5
      mt-5 mx-auto"
     >
       <div>
@@ -58,7 +58,7 @@ const Technologes = ({ linearGradient }: ITechnologesProps) => {
           </Suspense>
         </div>
 
-        <div className="col-span-3 max-sm:col-span-8">
+        <div className="sm:col-span-3 max-sm:col-span-9">
           <SelectedTechCards selected={selected} setSelected={setSelected} />
         </div>
       </div>

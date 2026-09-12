@@ -1,7 +1,7 @@
 import type { Dispatch, SetStateAction } from "react";
 import type { TechnologyData } from "../../type";
 import SelectedTechCard from "./SelectedTechCard";
-import { RxCross2 } from "react-icons/rx";
+
 
 export interface ISelectedTechCardsProps {
   selected: TechnologyData[];
@@ -23,7 +23,7 @@ const SelectedTechCards = ({
             </p>
           </div>
 
-          <div className="grid gap-4 mt-4">
+          <div className="grid gap-4  mt-4">
             <div
               style={{ color: "var(--text-color)" }}
               className="p-5 py-6 border border-dashed text-center border-gray-300 rounded-2xl flex items-center justify-center gap-3 "
