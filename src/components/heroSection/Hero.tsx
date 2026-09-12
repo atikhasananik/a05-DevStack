@@ -33,7 +33,7 @@ const Hero = ({ linearGradient }: IHeroProps) => {
             </p>
           </div>
           <div
-            className=" flex gap-4 justify-center
+            className=" flex gap-4 max-sm:justify-center
           "
           >
             <button
