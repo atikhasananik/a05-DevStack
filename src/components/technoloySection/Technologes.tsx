@@ -21,11 +21,14 @@ const Technologes = ({ linearGradient }: ITechnologesProps) => {
   console.log("SelectedData", selected);
 
   return (
-    <div className="container mt-5 mx-auto">
+    <div
+      className="container max-sm:mx-5
+     mt-5 mx-auto"
+    >
       <div>
         <h1
           style={{ color: "var(--heading-color)" }}
-          className="text-[38px] font-extrabold  "
+          className="text-[38px] max-sm:text-[1.5rem] font-extrabold  "
         >
           Explore the
           <span
@@ -36,13 +39,16 @@ const Technologes = ({ linearGradient }: ITechnologesProps) => {
             Technologies
           </span>
         </h1>
-        <p style={{ color: "var(--text-color)" }} className="text-lg mt-2">
+        <p
+          style={{ color: "var(--text-color)" }}
+          className="text-lg max-sm:text-[1rem] max-sm:mt-0 mt-2"
+        >
           Pick one technology per category to build your ideal stack.
         </p>
       </div>
 
-      <div className="grid gap-10 grid-cols-12 mt-15">
-        <div className="col-span-9">
+      <div className="grid gap-10 grid-cols-12 max-sm:grid-cols-1 mt-15">
+        <div className="col-span-9 ">
           <Suspense fallback={<p>loading...</p>}>
             <TechnologyCards
               selected={selected}
@@ -52,7 +58,7 @@ const Technologes = ({ linearGradient }: ITechnologesProps) => {
           </Suspense>
         </div>
 
-        <div className="col-span-3">
+        <div className="col-span-3 max-sm:col-span-8">
           <SelectedTechCards selected={selected} setSelected={setSelected} />
         </div>
       </div>

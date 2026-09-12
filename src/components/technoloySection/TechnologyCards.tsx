@@ -17,7 +17,7 @@ const TechnologyCards = ({
 
   return (
     <>
-      <div className="grid grid-cols-3 gap-4">
+      <div className="grid grid-cols-3 max-sm:grid-cols-1 gap-4">
         {technologesData.map((cardData) => {
           return (
             <TecnologyCard
