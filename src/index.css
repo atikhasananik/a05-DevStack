@@ -1,24 +1,29 @@
 @import "tailwindcss";
 @plugin "daisyui";
 
-*{
-  font-family: "Plus Jakarta Sans",'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+* {
+  font-family: "Plus Jakarta Sans", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-h1,h2,h3{
-  font-family: "Inter",'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+h1,
+h2,
+h3 {
+  font-family: "Inter", 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-:root{
+:root {
   --nav-btn-color: #D91B7E;
-  --main-btn-color:#0A0F1D;
-  --hading-color:#0F172A;
-  --common-btn-color:#0A0F1D;
-  --text-color:#64748B;
- 
+  --main-btn-color: #0A0F1D;
+  --hading-color: #0F172A;
+  --common-btn-color: #0A0F1D;
+  --text-color: #64748B;
+
 }
 
 
- button,li{
+button,
+li {
   cursor: pointer;
- }
+}
+
+

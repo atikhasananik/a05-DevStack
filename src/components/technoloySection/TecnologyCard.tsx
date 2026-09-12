@@ -51,13 +51,13 @@ const TecnologyCard = ({
 
   return (
     <div
-      className={`p-8 border rounded-3xl max-w-100 ${exist ? "border-red-400 " : " border-gray-200"}`}
+      className={`p-8 border transition-all duration-300 hover:shadow-lg shadow-gray-400 rounded-3xl max-w-100 ${exist ? "border-red-400 " : " border-gray-200"}`}
     >
       <div className="flex items-center pb-4 justify-between ">
         <img
           className="w-13 h-13 "
           src={cardData.icon}
-          alt={cardData.category}
+          alt={cardData.name}
         />
 
         <div className="py-1 px-3 text-sm border border-gray-300 bg-sky-100 rounded-4xl">

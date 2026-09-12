@@ -6,8 +6,6 @@ import { RxCross2 } from "react-icons/rx";
 export interface ISelectedTechCardsProps {
   selected: TechnologyData[];
   setSelected: Dispatch<SetStateAction<TechnologyData[]>>;
-
-  
 }
 
 const SelectedTechCards = ({

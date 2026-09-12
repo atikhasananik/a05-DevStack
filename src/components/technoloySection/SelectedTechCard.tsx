@@ -61,7 +61,7 @@ const SelectedTechCard = ({
       </div>
       {selected.map((data: TechnologyData) => {
         return (
-          <div className="grid gap-4 mt-4">
+          <div className="grid  gap-4 mt-4">
             <div className="p-5 py-4 border border-gray-300 rounded-2xl flex items-center gap-3 ">
               <div className="w-15 h-15">
                 <img
