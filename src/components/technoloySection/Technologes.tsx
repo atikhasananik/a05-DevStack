@@ -17,8 +17,6 @@ const getTechnologesData = async (): Promise<TechnologyData[]> => {
 const Technologes = ({ linearGradient }: ITechnologesProps) => {
   const [selected, setSelected] = useState<TechnologyData[]>([]);
 
-  // console.log("userDataCard",userDataCard)
-  console.log("SelectedData", selected);
 
   return (
     <div
