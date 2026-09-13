@@ -1,8 +1,8 @@
 # DevStack
 
-A little description
+#### this is the project that show many technologies and you can select all tecnology. also you remove those technology from your stack. in this project i fetch the json data and use this data.
 
-## ⚙️ Technology You Can Use
+## ⚙️ Technology I Use Here
 
 - React.js
 - Tailwind CSS, DaisyUI
@@ -11,7 +11,7 @@ A little description
 - JSON (for technology data)
 - Vite (build tool)
 
-## 3 features about your project
+## 3 features about my project
 
 1. Explore different technologies for web development.
 2. Build your own custom tech stack.
