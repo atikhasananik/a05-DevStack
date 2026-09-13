@@ -2,7 +2,7 @@
 
 #### this is the project that show many technologies and you can select all tecnology. also you remove those technology from your stack. in this project i fetch the json data and use this data.
 
-## ⚙️ Technology I Use Here
+## ⚙️ Technology That I Use Here
 
 - React.js
 - Tailwind CSS, DaisyUI
